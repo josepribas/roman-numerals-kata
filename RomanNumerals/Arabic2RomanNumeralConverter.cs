@@ -3,19 +3,26 @@
 public class Arabic2RomanNumeralConverter
 {
     private static Dictionary<int, string> conversions = 
-        new Dictionary<int, string>() {
-            { 1, "I" },
-            { 2, "II" },
-            { 3, "III" },
+        new Dictionary<int, string>() {        
+            { 1000, "M" },           
+            { 500, "D" },           
+            { 100, "C" },          
+            { 50, "L" },          
+            { 10, "X" },           
             { 5, "V" },
-            { 10, "X" },
-            { 50, "L" },
-            { 100, "C" },
-            { 500, "D" },
-            { 1000, "M" },
+            { 1, "I" },
         };
 
-    public static string Convert(int arabic) {      
-        return conversions.GetValueOrDefault(arabic) ?? "";
+    public static string Convert(int arabic) {  
+        string roman = "";    
+        foreach (var item in conversions)
+        {
+            while (arabic >= item.Key) 
+            {
+                roman += item.Value;
+                arabic -= item.Key;
+            }
+        }
+        return roman;
     }
 }

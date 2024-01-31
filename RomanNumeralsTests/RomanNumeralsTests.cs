@@ -10,6 +10,7 @@ public class Arabic2RomanNumeral
     [InlineData("II", 2)]
     [InlineData("III", 3)]
     [InlineData("V", 5)]
+    [InlineData("VI", 6)]
     [InlineData("X", 10)]
     [InlineData("L", 50)]
     [InlineData("C", 100)]
