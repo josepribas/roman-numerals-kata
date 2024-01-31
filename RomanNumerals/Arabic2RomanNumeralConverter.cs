@@ -8,7 +8,8 @@ public class Arabic2RomanNumeralConverter
             { 2, "II" },
             { 3, "III" },
             { 5, "V" },
-            { 10, "X" }
+            { 10, "X" },
+            { 50, "L" },
         };
 
     public static string Convert(int arabic) {      
