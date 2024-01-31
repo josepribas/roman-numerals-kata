@@ -16,6 +16,7 @@ public class Arabic2RomanNumeral
     [InlineData("IX", 9)]
     [InlineData("X", 10)]
     [InlineData("XVIII", 18)]
+    [InlineData("XL", 40)]
     [InlineData("L", 50)]
     [InlineData("LXXVI", 76)]
     [InlineData("C", 100)]
