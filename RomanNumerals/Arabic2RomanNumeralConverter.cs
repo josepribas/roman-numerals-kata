@@ -2,12 +2,14 @@
 
 public class Arabic2RomanNumeralConverter
 {
-    public static string Convert(int arabic) {
-        if (arabic == 1)
-            return "I";
-        else if (arabic == 2)
-            return "II";
-        else 
-            return "III";
+    private static Dictionary<int, string> conversions = 
+        new Dictionary<int, string>() {
+            { 1, "I" },
+            { 2, "II" },
+            { 3, "III" }
+        };
+
+    public static string Convert(int arabic) {      
+        return conversions.GetValueOrDefault(arabic) ?? "";
     }
 }
