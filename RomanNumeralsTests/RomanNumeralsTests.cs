@@ -19,10 +19,13 @@ public class Arabic2RomanNumeral
     [InlineData("XL", 40)]
     [InlineData("L", 50)]
     [InlineData("LXXVI", 76)]
+    [InlineData("XC", 90)]
     [InlineData("C", 100)]
     [InlineData("CLIV", 154)]
+    [InlineData("CD", 400)]
     [InlineData("D", 500)]
     [InlineData("DCCCLXXXIX", 889)]
+    [InlineData("CM", 900)]
     [InlineData("M", 1000)]
     [InlineData("MDCLXXXVIII", 1688)]
     public void ShouldConvertCorrectly(string expected, int arabic)
