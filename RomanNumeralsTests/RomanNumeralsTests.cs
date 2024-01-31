@@ -9,6 +9,7 @@ public class Arabic2RomanNumeral
     [InlineData("I", 1)]
     [InlineData("II", 2)]
     [InlineData("III", 3)]
+    [InlineData("V", 5)]
     public void ShouldConvertCorrectly(string expected, int arabic)
     {
         Arabic2RomanNumeralConverter.Convert(arabic).Should().Be(expected);       

@@ -6,7 +6,8 @@ public class Arabic2RomanNumeralConverter
         new Dictionary<int, string>() {
             { 1, "I" },
             { 2, "II" },
-            { 3, "III" }
+            { 3, "III" },
+            { 5, "V" }
         };
 
     public static string Convert(int arabic) {      
