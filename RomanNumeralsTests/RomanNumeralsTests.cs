@@ -23,6 +23,13 @@ public class Arabic2RomanNumeral
     [InlineData("D", 500)]
     [InlineData("CM", 900)]
     [InlineData("M", 1000)]
+    [InlineData("LXXVI", 76)]
+    [InlineData("CLIV", 154)]
+    [InlineData("DCCCXLVI", 846)]
+    [InlineData("DCCCLXXXIX", 889)]
+    [InlineData("MDCLXXXVIII", 1688)]
+    [InlineData("MCMXCIX", 1999)]
+    [InlineData("MMVIII", 2008)]
     public void ShouldConvertCorrectly(string expected, int arabic)
     {
         Arabic2RomanNumeralConverter.Convert(arabic).Should().Be(expected);       
