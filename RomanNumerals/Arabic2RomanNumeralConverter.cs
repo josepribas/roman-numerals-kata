@@ -6,6 +6,10 @@ public class Arabic2RomanNumeralConverter
 {
     private static Dictionary<int, string> conversions =
         new Dictionary<int, string>() {                        
+            { 1000, "M"},
+            { 500, "D"},
+            { 100, "C"},
+            { 50, "L"},
             { 10, "X"},
             { 5, "V"},
             { 1, "I"},

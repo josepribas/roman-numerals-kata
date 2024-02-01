@@ -13,6 +13,10 @@ public class Arabic2RomanNumeral
     [InlineData("VII", 7)]
     [InlineData("X", 10)]
     [InlineData("XVIII", 18)]
+    [InlineData("L", 50)]
+    [InlineData("C", 100)]
+    [InlineData("D", 500)]
+    [InlineData("M", 1000)]
     public void ShouldConvertCorrectly(string expected, int arabic)
     {
         Arabic2RomanNumeralConverter.Convert(arabic).Should().Be(expected);       
