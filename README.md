@@ -1,10 +1,10 @@
-# Roman numerals TDD kata with C#
+# Roman numerals TDD kata with C#  
 
-## Definition
+## Definition  
 
 Given a positive integer number (eg. 42) determine its Roman numeral representation as a String (eg "XLII"). You cannot write numerals like IM for 999.
 
-## Examples
+## Examples  
 
 |Arabic number	|Roman numeral	|Arabic number	|Roman numeral  |
 ----------------|---------------|---------------|---------------|
