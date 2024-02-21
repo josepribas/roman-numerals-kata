@@ -9,7 +9,7 @@ Given a positive integer number (eg. 42) determine its Roman numeral representat
 |Arabic number	|Roman numeral	|Arabic number	|Roman numeral  |
 ----------------|---------------|---------------|---------------|
 |1	            |I	            |60	            |LX             |
-|2	|II	|70	|LXXX
+|2	|II	|70	|LXX
 |3	|III	|80	|LXXX
 |4	|IV	|90	|XC
 |5	|V	|100	|C
